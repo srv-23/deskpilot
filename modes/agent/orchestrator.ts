@@ -15,5 +15,5 @@ export async function runAgentMode(){
 
     const config = defaultAgentConfig();
     const tracker = new ActionTracker();
-    const executor = new ToolExecutor(tracker,config);
+    const executor = new ToolExecutor(tracker, config);
 }
