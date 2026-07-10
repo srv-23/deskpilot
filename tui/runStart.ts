@@ -37,7 +37,7 @@ export async function runStart() {
     const mode = await select({
         message : "Which mode do you want to proceed with?",
         options : [
-            {value : "cli", label : "CLI Mode"},
+            {value : "cli", label : "CLI"},
             {value : "telegram", label : "Telegram"},
             {value : "exit", label : "Exit"}
         ]
