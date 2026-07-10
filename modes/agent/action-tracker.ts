@@ -25,7 +25,7 @@ export class ActionTracker {
     getActions() : readonly ActionLog[]{
         return this.actions;
     }
-    getpendingMutations() : ActionLog[]{
+    getPendingMutations() : ActionLog[]{
         return this.actions.filter(
             (a) => isMutationType(a.type) && a.status === 'pending'
         )

@@ -63,7 +63,7 @@ function groupPending(pending: ActionLog[]): ReviewGroup[] {
 
 
 export async function runApprovalFlow(tracker : ActionTracker):Promise<boolean>{
-    const pending = tracker.getpendingMutations();
+    const pending = tracker.getPendingMutations();
 
     if(pending.length === 0){
         console.log(chalk.dim("\nNo staged file, folder or shell changes to review.\n"));
